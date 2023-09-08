@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * body {
+            background-color: orange;
+        }
+
+        div.body {
+            width: 1400px;
+            height: 1130px;
+            background-color: black;
+            border: none;
+            display: grid;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-size: 50px;
+            color: white;
+            position: absolute;
+            margin-left: 550px;
+            margin-top: 50px; 
+        }
+
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-size: 27px;
+            color: white;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 100px;
+        }
+
+        div.infos1 {
+            width: px;
+            height: 300px;
+            border: none;
+            background-color: black;
+            color: white;
+            position: absolute;
+            margin-top: 230px;
+            margin-left: 100px;
+        }
+
+        div.infos2 {
+            width: px;
+            height: px;
+            border: none;
+            background-color: black;
+            color: white;
+            position: absolute;
+            margin-top: 230px;
+            margin-left: 380px;
+        }
+
+        p.info {
+            color: white; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        button {
+            width: 200px;
+            height: 40px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            font-size: 15px;
+            background-color: orange;
+            margin-top: 10px;
+            outline: 5px solid orange;
+        }
+
+        button:hover {
+            background-color: rgb(249, 189, 77);
+        }
+
+        button:active {
+            background-color: rgb(244, 179, 59);
+        }
+
+        div.box1 {
+            width: 375px;
+            height: 145px;
+            background-color: black;
+            position: absolute;
+            margin-left: 770px;
+            margin-top: 195px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div.box2 {
+            width: 375px;
+            height: 145px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            margin-left: 770px;
+            margin-top: 355px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div.top {
+            width: 430px;
+            height: 150px;
+            background-color: black;
+            border: none;
+            position: absolute;
+            margin-left: 730px;
+            margin-top: 200px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div.down {
+            width: 430px;
+            height: 150px;
+            background: black;
+            border: none;
+            position: absolute;
+            margin-left: 730px;
+            margin-top: 370px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div.inside {
+           width: 205px;
+           height: 150px;
+           background-color: black;
+           border: 1px solid orange; 
+        }
+
+        p.number {
+            font-size: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            position: absolute;
+            color: orange;
+            margin-bottom: 50px;
+            margin-top: 0;
+            margin-left: 25px;
+        }
+
+        p.text {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            color: white;
+            position: absolute;
+            margin-top: 90px;
+            width: 100px;
+            margin-left: 80px;
+        }
+
+        hr {
+            border: 2px solid orange;
+            width: 35px;
+            position: absolute;
+            margin-top: 105px;
+            margin-left: 27px;
+        }
+
+        div.icons {
+        width: 50px;
+        height: 350px;
+        border: none;
+        background-color: black;
+        position: absolute;
+        margin-left: 1330px;
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div.icons-inside {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: rgb(70, 70, 70);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        -webkit-transition: -webkit-transform 1s;
+    }
+
+    div.icons-inside:hover {
+        background-color: gray;
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+
+    i {
+        color: white;
+        font-size: 18px;
+    }
+
+
+        div.iconx {
+        width: 50px;
+        height: 350px;
+        border: none;
+        background-color: black;
+        position: absolute;
+        margin-left: 1330px;
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div.icons-inside1 {
+        width: 170px;
+        height: 40px;
+        border: none;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-right: 110px;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    div.icons-inside1:hover {
+        background-color: orange;
+        border: ;
+        outline: 2px solid orange;
+        color: white;
+    }
+
+    div.icons-inside2 {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: rgb(77, 77, 77);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        margin-left: px;
+        -webkit-transition: -webkit-transform 1s;
+    }
+
+    div.icons-inside2:hover {
+        background-color: gray;
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+
+    i {
+        color: white;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    div.iconx2 {
+        width: 50px;
+        height: 350px;
+        border: none;
+        background-color: black;
+        position: absolute;
+        margin-left: 1330px;
+        margin-top: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div.icons-inside1 {
+        width: 170px;
+        height: 40px;
+        border: none;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-right: 110px;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    div.icons-inside1:hover {
+        background-color: orange;
+        border: ;
+        outline: 2px solid orange;
+        color: white;
+    }
+
+    div.icons-inside2 {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: rgb(77, 77, 77);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        margin-left: px;
+        -webkit-transition: -webkit-transform 1s;
+    }
+
+    div.icons-inside2:hover {
+        background-color: gray;
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+
+    i {
+        color: white;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+        h6 {
+            font-size: 35px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            margin-left: 600px;
+            margin-top: 600px;
+        }
+
+        div.data1 {
+            width: 900px;
+            height: 220px;
+            background-color: black;
+            position: absolute;
+            margin-left: 210px;
+            margin-top: 655px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div.data2 {
+            width: 900px;
+            height: 220px;
+            background-color: black;
+            position: absolute;
+            margin-left: 210px;
+            margin-top: 890px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        p.data {
+            color: white;
+            font-size: 23px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            position: absolute;
+            z-index: 3;
+            margin-top: 190px;
+        }
+
+        div.data-in {
+            width: 195px;
+            height: 220px;
+            background-color: black;
+            display: flex;
+            align-items: start;
+            justify-content: space-around;
+        }
+
+        div.circle-html {
+            width: 160px;
+            height: 160px;
+            background-color: black;
+            border-radius: 50%;
+            border-left: 10px solid orange;
+            border-bottom: 10px solid orange;
+            border-top: 10px solid orange;
+            border-right: 10px solid gray;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        div.circle-css {
+            width: 160px;
+            height: 160px;
+            background-color: black;
+            border-radius: 50%;
+            border-top: 10px solid orange;
+            border-left: 10px solid orange;
+            border-bottom: 10px solid orange;
+            border-right: 10px solid gray;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        div.circle-java {
+            width: 160px;
+            height: 160px;
+            background-color: black;
+            border-radius: 50%;
+            border-top: 10px solid gray;
+            border-left: 10px solid orange;
+            border-bottom: 10px solid gray;
+            border-right: 10px solid gray;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        div.circle-react {
+            width: 160px;
+            height: 160px;
+            background-color: black;
+            border-radius: 50%;
+            border-top: 10px solid gray;
+            border-left: 10px solid orange;
+            border-bottom: 10px solid gray;
+            border-right: 10px solid gray;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        div.setting1 {
+            width: 170px;
+            height: 35px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            margin-top: 100px;
+            z-index: 3;
+            margin-left: -8px;
+            color: black;
+            width: 170px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;   
+        }
+
+        div.setting1:hover {
+            background-color: orange;
+            color: white;
+            outline: ;
+        }
+
+        div.setting2 {
+            width: 30px;
+            height: 35px;
+            border: none;
+            background-color: white;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        img.setting {  
+            height: 22px;
+            width: 22px;
+            margin-left: 5px;
+            -webkit-animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            100%{-webkit-transform: rotate(360deg);}
+        }
+
+        div.setting-down {
+            width: 170px;
+            height: 35px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            margin-top: 650px;
+            z-index: 3;
+            margin-left: -8px;
+            color: black;
+            width: 170px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;   
+        }
+        
+        div.setting-down:hover {
+            background-color: orange;
+            color: white;
+            outline: ;
+        }
+
+    </style>
+        
+</head>
+<body>
+    <div class="body">
+
+        <div class="setting1">
+            <div class="setting2"><img  class="setting" src="backSetting-removebg-preview.png"> </div> Settings <
+        </div>
+
+        <div class="setting-down">
+            <div class="setting2"><img  class="setting" src="backSetting-removebg-preview.png"> </div> Settings <
+        </div>
+
+        <h1>ABOUT<span style="color: orange; font-size: 55px; font-weight: bolder;"> ME</span></h1>
+
+        <h3>PERSONAL INFOS</h3>
+
+        <div class="infos1">
+            <p class="info">First Name: &nbsp;Olasunkanmi</p>
+            <p class="info">Last Name: &nbsp;Oluwasanmi</p>
+            <p class="info">Also Known As: &nbsp;Coded Boss</p>
+            <p class="info">Nationality: &nbsp;Nigerian</p>
+            <p class="info">Freelance: &nbsp;Avaliable</p>
+
+            <button>DOWNLOAD CV</button>
+        </div>
+        
+        <div class="infos2">
+            <p class="info">Address: &nbsp;Lagos</p>
+            <p class="info">Phone: &nbsp;+2348036001489</p>
+            <p class="info">Email: &nbsp;olawealth4sure@gmail.com</p>
+            <p class="info">Youtube Channel: &nbsp;TrendyTechTV</p>
+            <p class="info">Languages: Yoruba, English</p>
+        </div>
+
+        <div class="top">
+            <div class="inside">
+                <p class="number">05<sup><span style="font-size: 40px;">+</span></sup></p>
+                <p class="text">YEARS OF EXPERIENCE</p>
+                <hr>
+            </div>
+            <div class="inside">
+                <p class="number">20<sup><span style="font-size: 40px;">+</span></sup></p>
+                <p class="text">COMPLETED PROJECT</p>
+                <hr>
+            </div>
+        </div>
+        <div class="down">
+            <div class="inside">
+                <p class="number">18<sup><span style="font-size: 40px;">+</span></sup></p>
+                <p class="text">HAPPY CUSTOMERS</p>
+                <hr>
+            </div>
+            <div class="inside">
+                <p class="number">10<sup><span style="font-size: 40px;">+</span></sup></p>
+                <p class="text">AWARDS WON</p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="setting-down1">
+            <div class="setting-down2">
+                <img class="setting" src="backSetting-removebg-preview.png">
+            </div>
+        </div>
+
+        <div class="iconx">
+          <a href="Home.html"> <div class="icons-inside1">< Home
+            <div class="icons-inside2"><i class="fa-solid fa-house"></i></div>
+         </div> </a>
+
+        <div class="icons-inside1">< About
+             <div span style="background-color: orange;"  class="icons-inside2"><i class="fa-solid fa-user"></i></div>
+         </div> 
+
+        <a href="potfolio.html"> <div class="icons-inside1">< Portfolio
+             <div class="icons-inside2"><i class="fa-solid fa-briefcase"></i></div>
+         </div> </a>
+
+       <a href="message.html"> <div class="icons-inside1">< Message
+             <div class="icons-inside2"><i class="fa-solid fa-envelope-open"></i></div>
+         </div> </a>
+
+       <a href="blog.html"> <div class="icons-inside1">< Blog
+             <div class="icons-inside2"><i class="fa-solid fa-comments"></i></div>
+         </div> </a>
+     </div>
+
+     
+
+     <div class="iconx2">
+        <a href="About.html"> <div class="icons-inside1">< Home
+            <div class="icons-inside2"><i class="fa-solid fa-house"></i></div>
+         </div> </a>
+
+        <div class="icons-inside1">< About
+             <div span style="background-color: orange;" class="icons-inside2"><i class="fa-solid fa-user"></i></div>
+         </div> 
+
+        <a href="potfolio.html"> <div class="icons-inside1">< Portfolio
+             <div class="icons-inside2"><i class="fa-solid fa-briefcase"></i></div>
+         </div> </a>
+
+       <a href="message.html"> <div class="icons-inside1">< Message
+             <div class="icons-inside2"><i class="fa-solid fa-envelope-open"></i></div>
+         </div> </a>
+
+       <a href="blog.html"> <div class="icons-inside1">< Blog
+             <div class="icons-inside2"><i class="fa-solid fa-comments"></i></div>
+         </div> </a>
+     </div>
+
+        <h6> MY SKILLS</h6>
+
+        <div class="data1">
+            <div class="data-in"><p class="data">HTML</p> <div class="circle-html">75%</div></div>
+            <div class="data-in"><p class="data">CSS</p> <div class="circle-css">75%</div></div>
+            <div class="data-in"><p class="data">JAVASCRIPT</p> <div class="circle-java">25%</div></div>
+            <div class="data-in"><p class="data">REACT</p> <div class="circle-react">25%</div></div>
+        </div>
+
+    </div>
+</body>
+</html>

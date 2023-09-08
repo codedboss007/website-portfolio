@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+       * body {
+        background-color: orange;
+    }
+
+    div.body {
+        width: 1398px;
+        height: 650px;
+        background-color: black;
+        border: none;
+        display: grid;
+    }
+
+    div.setting1 {
+            width: 170px;
+            height: 35px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            margin-top: 100px;
+            z-index: 3;
+            margin-left: -8px;
+            color: black;
+            width: 170px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;   
+        }
+
+        div.setting1:hover {
+            background-color: orange;
+            color: white;
+            outline: ;
+        }
+
+        div.setting2 {
+            width: 30px;
+            height: 35px;
+            border: none;
+            background-color: white;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        img.setting {
+        height: 22px;
+        width: 22px;
+        margin-left: 5px;
+        -webkit-animation: spin 2s linear infinite;
+    }
+
+  
+        @-webkit-keyframes spin {
+        100%{-webkit-transform: rotate(360deg);}
+    }
+
+    h1 {
+        font-size: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        color: rgb(76, 76, 76);
+        margin-left: 410px;
+        margin-bottom: 30px;
+        margin-top: 8px;
+        letter-spacing: 5px;
+    } 
+
+    h4 {
+        font-size: 65px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        color: white;
+        margin-left: 490px;
+        margin-top: 29px;
+    }
+
+    h5 {
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        color: white;
+        margin-left: 170px;
+        margin-top: 160px;
+        
+    }
+
+    p.main {
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        color: white;
+        margin-left: 170px;
+        margin-top: 210px;
+        position: absolute;
+        width: 350px;
+        text-align: justify;
+    }
+
+     img.bluecall {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+   }
+
+    img.bluemsg {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+    }
+
+    div.envelope {
+        width: 255px;
+        height: 40px;
+        border: none;
+        background-color: black;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 170px;
+        cursor: pointer;
+    }
+    div.envelope:hover {
+        outline: 1px solid orange;
+        border-radius: 10px;
+    }
+
+    div.callIcon {
+        width: 255px;
+        height: 40px;
+        border: none;
+        background-color: black;
+        position: absolute;
+        margin-top: 360px;
+        margin-left: 170px;
+        cursor: pointer;
+    }
+    div.callIcon:hover {
+        outline: 1px solid orange;
+        border-radius: 10px;
+    }
+
+    p.toptext {
+        color: white;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        margin-left: 52px;
+        margin-bottom: 30px;
+        position: absolute;
+        margin-top: 0;
+    }
+    p.downtext {
+        color: white;
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-left: 52px;
+        position: absolute;
+        margin-top: 21px;
+    }
+
+    div.mediabox {
+        width: 250px;
+        height: 45px;
+        background-color: black;
+        position: absolute;
+        margin-top: 425px;
+        margin-left: 170px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div.media-in {
+        width: 45px;
+        height: 45px;
+        background-color: rgb(76, 76, 76);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    div.media-in:hover {
+        background-color: gray;
+    }
+
+    div.input {
+        background-color: black;
+        width: 560px;
+        height: 50px;
+        position: absolute;
+        margin-top: 160px;
+        margin-left: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    input {
+        width: 173px;
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(76, 76, 76);
+        font-size: 13px;
+        color: white;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    input:focus {
+        outline: none !important;
+        border: none;
+    }
+
+    textarea {
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        margin-left: 550px;
+        margin-top: 235px;
+        width: 560px;
+        height: 150px;
+        border: none;
+        border-radius: 15px;
+        background-color: rgb(76, 76, 76);
+    }
+
+    button {
+        position: absolute;
+        margin-left: 550px;
+        margin-top: 420px;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: orange;
+        color: white;
+        border: 2px solid white;
+        outline: 5px solid orange;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(247, 181, 59);
+    }
+
+    div.iconx {
+        width: 50px;
+        height: 350px;
+        border: none;
+        background-color: black;
+        position: absolute;
+        margin-left: 1330px;
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div.icons-inside1 {
+        width: 170px;
+        height: 40px;
+        border: none;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-right: 110px;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    div.icons-inside1:hover {
+        background-color: orange;
+        border: ;
+        outline: 2px solid orange;
+        color: white;
+    }
+
+    div.icons-inside2 {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: rgb(77, 77, 77);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        margin-left: px;
+        -webkit-transition: -webkit-transform 1s;
+    }
+
+    div.icons-inside2:hover {
+        background-color: gray;
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+
+    i {
+        color: white;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="body">
+
+        <h1>CONTACT</h1>
+        <h4> GET IN<span style="color: orange; font-size: 70px;"> TOUCH</span> </h4>
+        <h5> DON'T BE SHY !</h5>
+        <p class="main"> Feel free to get in touch with me. I am always open to discussing new projects, creative
+            ideas or opportunities to be part of your visions.
+        </p>
+
+        <div class="envelope">
+            <i <span style="color: orange; font-size: 40px;
+            position: absolute;" class="fa-solid fa-envelope-open"></i>
+            <p class="toptext">MAIL ME</p>
+            <p class="downtext">olawealth4sure@gmail.com</p>
+        </div>
+
+        <div class="callIcon">
+            <i <span style="color: orange; font-size: 40px; position: absolute;" class="fa-solid fa-square-phone"></i>
+            <p class="toptext">CALL ME</p>
+            <p class="downtext">+2348036001489</p>
+        </div>
+
+        <div class="mediabox">
+            <a href="#"> <div class="media-in"><i span style="font-size: 22px;" class="fa-brands fa-facebook-f"></i></div> </a>
+            <a href="#"> <div class="media-in"><i span style="font-size: 22px;" class="fa-brands fa-instagram"></i></div></a>
+            <a href="#"> <div class="media-in"><i span style="font-size: 22px;" class="fa-brands fa-youtube"></i></div> </a>
+            <a href="#"> <div class="media-in"><i span style="font-size: 22px;" class="fa-brands fa-whatsapp"></i></div></a>
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder= "&nbsp&nbsp&nbsp&nbsp; YOUR NAME">
+            <input type="text" placeholder= "&nbsp&nbsp&nbsp&nbsp; YOUR E-MAIL">
+            <input type="text" placeholder= "&nbsp&nbsp&nbsp&nbsp; YOUR SUBJECT">
+        </div>
+
+        <button>SEND MESSAGE</button>
+
+        <textarea placeholder="&nbsp&nbsp&nbsp&nbsp; YOUR MESSAGE"></textarea>
+
+        <div class="setting1">
+            <div class="setting2"><img  class="setting" src="backSetting-removebg-preview.png"> </div> Settings <
+        </div>
+
+        <div class="iconx">
+           <a href="Home.html"><div class="icons-inside1">< Home
+            <div class="icons-inside2"><i class="fa-solid fa-house"></i></div>
+         </div></a>
+
+       <a href="About.html"> <div class="icons-inside1">< About
+             <div class="icons-inside2"><i class="fa-solid fa-user"></i></div>
+         </div> </a>
+
+        <a href="potfolio.html"> <div class="icons-inside1">< Portfolio
+             <div class="icons-inside2"><i class="fa-solid fa-briefcase"></i></div>
+         </div> </a>
+
+        <div class="icons-inside1">< Message
+             <div <span style="background-color: orange;"  class="icons-inside2"><i class="fa-solid fa-envelope-open"></i></div>
+         </div> 
+
+       <a href="blog.html"> <div class="icons-inside1">< Blog
+             <div class="icons-inside2"><i class="fa-solid fa-comments"></i></div>
+         </div> </a>
+     </div>
+
+    </div>
+</body>
+</html>

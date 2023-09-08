@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * body {
+            background-color: orange;
+        }
+
+        div.body1 {
+            width: 1410px;
+            height: 652px;
+            border: none;
+            background-color: orange;
+            position: absolute;
+        }
+
+        div.body2 {
+            width: 1390px;
+            height: 610px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 15px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 15px;
+        }
+        
+        div.patch-up {
+            width: 1175px;
+            height: 30px;
+            border: none;
+            background-color: black;
+            position: absolute;  
+            margin-left: 236px;
+            margin-bottom: ;
+            z-index: 3;
+            transform: skew(15deg);
+        }
+
+        div.patch-down {
+            width: 950px;
+            height: 30px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            margin-left: 457px;
+            margin-top: 620px;
+            z-index: 3;
+            transform: skew(15deg);
+        }
+
+        div.setting1 {
+            width: 170px;
+            height: 35px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            margin-top: 100px;
+            z-index: 3;
+            margin-left: -8px;
+            color: black;
+            width: 170px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;   
+        }
+
+        div.setting1:hover {
+            background-color: orange;
+            color: white;
+            outline: ;
+        }
+
+        div.setting2 {
+            width: 30px;
+            height: 35px;
+            border: none;
+            background-color: white;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display: flex;
+            align-items: center;   
+        }
+
+        
+
+        img.setting {
+            height: 22px;
+            width: 22px;
+            margin-left: 5px;
+            -webkit-animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            100%{-webkit-transform: rotate(360deg);}
+        }
+
+        img.myPix {
+            width: 500px;
+            height: 500px;
+            margin-top: 80px;
+            filter: brightness(80%);
+            margin-left: 25px;
+        }
+
+        h4 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            margin-left: 550px;
+            margin-top: 130px;
+
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-size: 50px;
+            color: white;
+            position: absolute;
+            margin-left: 550px;
+            margin-top: 160px; 
+        }
+
+        P {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-size: 21px;
+            color: white;
+            position: absolute;
+            margin-left: 550px;
+            margin-top: 230px;
+            width: 400px;
+            text-align: justify;
+        }
+
+        button {
+            margin-top: 420px;
+            margin-left: 550px;
+            position: absolute;
+            height: 40px;
+            width: 200px;
+            border: 2px solid white;
+            outline: 5px solid orange;
+            background-color: orange;
+            color: white;
+            font-size: 13px;
+            font-weight: bolder;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(249, 195, 94);
+        }
+
+        button:active {
+            background-color: rgb(250, 172, 27);
+        }
+
+        div.last {
+            height: 650px;
+            width: 10px;
+            background-color:  orange;
+            position: absolute;
+            margin-left: 1398px;
+            z-index: 4;
+            margin-bottom: 10;
+        }
+
+    div.iconx {
+        width: 50px;
+        height: 350px;
+        border: none;
+        background-color: black;
+        position: absolute;
+        margin-left: 1330px;
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div.icons-inside1 {
+        width: 170px;
+        height: 40px;
+        border: none;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-right: 110px;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    div.icons-inside1:hover {
+        background-color: orange;
+        border: ;
+        outline: 2px solid orange;
+        color: white;
+    }
+
+    div.icons-inside2 {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: rgb(77, 77, 77);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        margin-left: px;
+        -webkit-transition: -webkit-transform 1s;
+    }
+
+    div.icons-inside2:hover {
+        background-color: gray;
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+
+    i {
+        color: white;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="patch-up"></div>
+
+    <div class="last"></div>
+    <div class="body1">
+       <div class="setting1">
+            <div class="setting2"><img  class="setting" src="backSetting-removebg-preview.png"> </div> Settings <
+        </div>
+
+        <div class="body2">
+            <h4>HI THERE !</h4>
+            <h1>I'M <span style="color: orange;">CODED BOSS</span> </h1>
+            <p>I'm a Nigerian based web designer, front-end developer and graphics designer focused
+                on crafting clean & user friendly experiences, I am passionate about building
+                excellent softwares that improves the lives of those around me.
+            </p>
+
+            <button>MORE ABOUT ME</button>
+
+            <img class="myPix"  src="me_me-removebg-preview (1).png">
+
+        </div>
+        <div class="patch-down"></div>
+
+        <div class="iconx">
+               <div class="icons-inside1">< Home
+               <div span style="background-color: orange;" class="icons-inside2"><i class="fa-solid fa-house"></i></div>
+            </div>
+
+          <a href="About.html"> <div class="icons-inside1">< About
+                <div class="icons-inside2"><i class="fa-solid fa-user"></i></div>
+            </div> </a>
+
+           <a href="potfolio.html"> <div class="icons-inside1">< Portfolio
+                <div class="icons-inside2"><i class="fa-solid fa-briefcase"></i></div>
+            </div> </a>
+
+          <a href="message.html"> <div class="icons-inside1">< Message
+                <div class="icons-inside2"><i class="fa-solid fa-envelope-open"></i></div>
+            </div> </a>
+
+          <a href="blog.html"> <div class="icons-inside1">< Blog
+                <div class="icons-inside2"><i class="fa-solid fa-comments"></i></div>
+            </div> </a>
+        </div>
+    
+</body>
+</html>

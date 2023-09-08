@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+    * body {
+        background-color: orange;
+    }
+
+    div.body {
+        width: 1398px;
+        height: 650px;
+        background-color: black;
+        border: none;
+        display: grid;
+    }
+
+    div.setting1 {
+            width: 170px;
+            height: 35px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            margin-top: 100px;
+            z-index: 3;
+            margin-left: -8px;
+            color: black;
+            width: 170px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;   
+        }
+
+        div.setting1:hover {
+            background-color: orange;
+            color: white;
+            outline: ;
+        }
+
+        div.setting2 {
+            width: 30px;
+            height: 35px;
+            border: none;
+            background-color: white;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        img.setting {
+        height: 22px;
+        width: 22px;
+        margin-left: 5px;
+        -webkit-animation: spin 2s linear infinite;
+    }
+
+
+        @-webkit-keyframes spin {
+        100%{-webkit-transform: rotate(360deg);}
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        color: white;
+        margin-left: 510px;
+    }
+
+
+    div.iconx {
+        width: 50px;
+        height: 350px;
+        border: none;
+        background-color: black;
+        position: absolute;
+        margin-left: 1330px;
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div.icons-inside1 {
+        width: 170px;
+        height: 40px;
+        border: none;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-right: 110px;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    div.icons-inside1:hover {
+        background-color: orange;
+        border: ;
+        outline: 2px solid orange;
+        color: white;
+    }
+
+    div.icons-inside2 {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: rgb(77, 77, 77);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        margin-left: px;
+        -webkit-transition: -webkit-transform 1s;
+    }
+
+    div.icons-inside2:hover {
+        background-color: gray;
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+
+    i {
+        color: white;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    div.main1 {
+        width: 950px;
+        height: 220px;
+        background-color: black;
+        position: absolute;
+        margin-left: 200px;
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.main2 {
+        width: 950px;
+        height: 220px;
+        background-color: black;
+        position: absolute;
+        margin-left: 200px;
+        margin-top: 370px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.main-inside {
+        width: 304px;
+        height: 220px;
+        background-color: skyblue;
+        border-radius: 25px;
+    }
+    img {
+        width: 304px;
+        height: 220px;
+    }
+
+    </style>
+</head>
+<body>
+   <div class="body">
+
+    <div class="setting1">
+        <div class="setting2"><img  class="setting" src="backSetting-removebg-preview.png"> </div> Settings <
+    </div>
+
+    <h1> MY<span style="color: orange;"> PORTFOLIO</span></h1>
+
+   <div class="iconx">
+       <a href="Home.html"> <div class="icons-inside1">< Home
+        <div class="icons-inside2"><i class="fa-solid fa-house"></i></div>
+     </div></a>
+
+   <a href="About.html"> <div class="icons-inside1">< About
+         <div class="icons-inside2"><i class="fa-solid fa-user"></i></div>
+     </div> </a>
+
+    <div class="icons-inside1">< Portfolio
+         <div span style="background-color: orange;" class="icons-inside2"><i class="fa-solid fa-briefcase"></i></div>
+     </div>
+
+   <a href="message.html"> <div class="icons-inside1">< Message
+         <div class="icons-inside2"><i class="fa-solid fa-envelope-open"></i></div>
+     </div> </a>
+
+   <a href="blog.html"> <div class="icons-inside1">< Blog
+         <div class="icons-inside2"><i class="fa-solid fa-comments"></i></div>
+     </div> </a>
+ </div>
+
+    <div class="main1">
+        <div class="main-inside"><img src="obama.png"></div>
+        <div class="main-inside"><img src="rainbow.png"></div>
+        <div class="main-inside"><img src="forbes.png"></div>
+    </div>
+    <div class="main2">
+        <div class="main-inside"><img src="glamour.png"></div>
+        <div class="main-inside"><img src="butterfly.png"></div>
+        <div class="main-inside"><img src="buz.png"></div>
+    </div>
+
+   </div> 
+</body>
+</html>
